@@ -6,9 +6,12 @@ In this project, we try to develop controllers for a race car to drive down the 
 ![3D environment](./view.JPG)
 
 ## Controller Design
-In order to do this, we need 3 controllers:
+We need 3 controllers:
+
 **1. Steering:** The car should drive on the track as efficiently as possible without hitting the sides.
+
 **2. Braking:** When we want the car to stop, it has to brake in a way as to prevent slipping of the tires on the road. This way, the brake distance will be the shortest.
+
 **3. Speed/acceleration:** When the car accelerates, the tires need to spin in way as to prevent alipping. Therefore, we will have the most contact between tires and the road, which leads to better acceleration.
 
 All three controllers above are PID controllers in nature. For braking and accelarion, we need a mathemathical model for the fraction between the tires and asphalt. For steering, we extract the equation of the middle line of the road and control the vehicle in a way as to follow thta line. 
